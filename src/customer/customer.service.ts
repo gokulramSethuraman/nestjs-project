@@ -7,7 +7,7 @@ export class CustomerService {
 
   createCustomer(input: CustomerInput): Customer {
     const newCustomer: Customer = {
-      id: Math.round(Math.random()*1000),
+      id: Math.round(Math.random() * 1000),
       name: input.name,
       email: input.email,
     };

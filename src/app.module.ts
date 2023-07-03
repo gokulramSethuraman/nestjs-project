@@ -10,14 +10,13 @@ import { CustomerService } from './customer/customer.service';
     //   autoSchemaFile: 'schema.gql',
     // }),
     GraphQLModule.forRoot<ApolloDriverConfig>({
-        driver: ApolloDriver,
-        // include: [ProductModule],
-        playground: true,
-        // autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-        autoSchemaFile: 'schema.gql',
-        sortSchema: true,
-  
-      }),
+      driver: ApolloDriver,
+      // include: [ProductModule],
+      playground: true,
+      // autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: 'schema.gql',
+      sortSchema: true,
+    }),
   ],
   providers: [CustomerResolver, CustomerService],
 })
